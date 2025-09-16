@@ -58,7 +58,6 @@ class Solution:
 
         for innerIndex in range(1,len(nums)):
             if nums[pointer1Index] != nums[innerIndex]:
-                print(nums[innerIndex])
                 nums[pointer1Index+1] = nums[innerIndex]
                 pointer1Index = pointer1Index+1
                 ans3 = ans3+1
