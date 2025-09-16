@@ -23,6 +23,22 @@ def practice(arr,n):
         n= n-2
     return ""
 
+def practiceSecondIteration(arr,n):
+    bdth = n
+    leadingSpaces = 0
+    while n>0:
+        for index in range(leadingSpaces):
+            print(" ",end="")
+        for index in range(n):
+            print("+",end="")
+        for index in range(leadingSpaces):
+            print(" ",end="")
+        print("")
+        n= n-2
+        leadingSpaces = leadingSpaces+2
+    return ""
+
 practice([],5)
+practiceSecondIteration([],3)
 
 ## Learn How Authentication Works and all.
