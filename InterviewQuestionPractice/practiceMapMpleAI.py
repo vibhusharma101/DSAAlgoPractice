@@ -35,10 +35,10 @@ def practiceSecondIteration(arr,n):
             print(" ",end="")
         print("")
         n= n-2
-        leadingSpaces = leadingSpaces+2
+        leadingSpaces = leadingSpaces+1
     return ""
 
 practice([],5)
-practiceSecondIteration([],3)
+practiceSecondIteration([],7)
 
 ## Learn How Authentication Works and all.
