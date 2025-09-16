@@ -1,3 +1,7 @@
+
+# Time Complexity (O(logn)) )
+
+
 def isNumberThere(arr, number):
     start =0
     end = len(arr)
