@@ -1,0 +1,42 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // 🎯 CRITICAL FIXES FOR MODULE ERRORS 🎯
+
+    // 1. Set module to CommonJS (standard for Node/Express)
+    "module": "commonjs", 
+    // 2. Allow modern 'import/export' syntax to work with CommonJS libraries
+    "esModuleInterop": true, 
+    // 3. Disable the overly strict rule that caused the error
+    "verbatimModuleSyntax": false, 
+    // 4. Ensure we compile for a modern Node.js environment
+    "target": "es2020",
+    
+    // Environment Settings
+    "lib": ["es2020"],
+    "types": ["node", "express"], // Explicitly include 'node' and 'express' types
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    
+    // Recommended Options
+    "strict": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    
+    // Clean-up removed options:
+    "jsx": "react-jsx" // Removed, as we're building a backend API, not React.
+  }
+}
